@@ -2,6 +2,7 @@ from django.http import request
 from django.shortcuts import render, get_object_or_404, redirect
 from django.urls import reverse_lazy
 from django.views.generic import TemplateView, CreateView, ListView, DeleteView
+#from django.views.generic import MultipleObjectMixin
 from todo.models import Todo, DateTest
 
 
@@ -33,3 +34,11 @@ def DateV(request):
     context = {'date_list': date_list}
     return render(request, 'todo/todo_date_test.html', context)
     # return render(request, 'todo/todo_date_test.html')
+
+
+# class TodoMOMCV(MultipleObjectMixin, CreateView):  # 상속 받는 순서도 중요함.
+    #template_name = 'todo/todo_form_list.html'
+
+
+def Test(request):
+    return render(request, 'todo/test.html')

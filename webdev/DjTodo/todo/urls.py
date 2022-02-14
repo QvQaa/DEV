@@ -8,4 +8,6 @@ urlpatterns = [
     path('list/', views.TodoLV.as_view(), name='list'),
     path('date_test/', views.DateV, name='date'),
     path('<int:pk>/delete/', views.TodoDelV.as_view(), name='delete'),
+    #path('mixin/', views.TodoMOMCV.as_view(), name='mixin'),
+    path('test/', views.Test, name='test'),
 ]
