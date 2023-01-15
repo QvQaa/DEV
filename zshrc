@@ -87,12 +87,12 @@ export PATH=/opt/homebrew/bin:$PATH
 alias ll='ls -Galt'
 alias python='/opt/homebrew/bin/python3.9'
 alias git='/opt/homebrew/bin/git'
-alias grep='grep —color=auto'
+alias grep='grep --color=auto'
 alias cddev='cd /Users/sangwonlee/dev'
 alias gitmaster='git checkout master'
 alias senv='source /etc/zshrc'
 alias node='/opt/homebrew/bin/node'
 alias study='cd /Users/sangwonlee/study/LSW/'
-alias webdev='source /Users/sangwonlee/dev/webdev/bin/activate'
-
+alias webdev='source /Users/sangwonlee/dev/2022/webdev/bin/activate'
+  
 echo "source zsh env successfully"
